@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .scene{
+       position: relative; 
+            top: 50px;   
+            left: 50px;      
+            width: 450px;
+            height: 450px;
+            margin: 0;
+            background-color:wheat;
+            overflow: hidden;
+        }    
+   
+
+.cube{
+    background-color: aqua;
+    display: block;
+    width: 1200px;
+    height: 400px;
+}
+.piece{ display: block;
+    width: 1500px;
+    height: 300px;
+    background-color: blue;
+    display: grid;
+    grid-template:20px/ 20px 20px 1fr ;
+   grid-gap: 50px;
+
+}
+.piece div{
+    position: relative;
+    height: 20px;
+    top: 40px;
+    background-color: antiquewhite;
+
+
+}
+   
+
+    </style>
+</head>
+
+<body>
+    <div class="scene" id="scene">  
+        <div class="pivot cre centered" id="pivot" >  
+         <div class="cube" id="cube">  
+          <div class="piece">  
+           <div class="element left">
+               <div></div>
+           </div>  
+           <div class="element right"></div>  
+           <div class="element top"></div>  
+           <div class="element bottom"></div>  
+           <div class="element back">
+               <div>
+                   <div></div>
+               </div>
+           </div>  
+           <div class="element front"></div>  
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
